@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+{%- capture date_format -%}{%- translate global.date_format -%}{%- endcapture -%}
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <!-- Page Header -->
+  <header class="post">
+    {%- if page.image -%}
+      {%- assign post_meta_bg = " post-meta-bg" -%}
+      <div class="post-bg" style="background-image: url('{{ page.image }}')">
+    {%- else -%}
+      {%- assign post_meta_bg = "" -%}
+      <div class="post-no-bg">
+    {%- endif -%}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1 itemprop="name headline">{{ page.title }}</h1>
+              <h2 class="post-subheading" itemprop="alternativeHeadline">{{ page.subtitle }}</h2>
+              <div class="{{ "post-meta" | append: post_meta_bg }}">
+                {%- if page.author -%}
+                  {%- translate post.from -%}
+                  {%- for author in page.author -%}
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <span itemprop="name">{{ author }}</span><!-- avoids whitespaces
+                    --></span>
+                    {%- if forloop.last == false -%}, {%- endif -%}
+                  {%- endfor -%}
+                  &nbsp{%- translate post.at -%}&nbsp
+                {%- endif -%}
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {%- if page.modified_date -%}
+          <p class="font-weight-light font-italic">
+            {%- translate post.updated -%}: <time datetime="{{ page.modified_date | date_to_xmlschema }}" itemprop="dateModified">{{ page.modified_date | date: date_format }}</time>
+          </p>
+        {%- endif -%}
+        <div itemprop="articleBody">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+<hr>

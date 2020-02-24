@@ -1,0 +1,20 @@
+global:
+  date_format: "%d. %b. %Y"
+  nothing_to_see: "Hier gibt es nichts zu sehen! Bitte"
+  this_link: "diesem Link folgen"
+langs:
+  en: English
+  de: Deutsch
+post:
+  from: "Erstellt von"
+  at: "am"
+  updated: "Aktualisiert"
+  older: "Ältere Posts"
+  newer: "Neuere Posts"
+menu:
+  title_about: "About"
+  desc_about: "Was wir tun"
+  title_contact: "Kontakt"
+  desc_contact: "Mit uns in Kontakt treten"
+  title_events: "Events"
+  desc_events: "Aktuelles"

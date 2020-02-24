@@ -1,0 +1,28 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{site.description}}">
+  <meta name="author" content="{{site.author}}">
+
+  {%- if page.title and page.title != "" -%}
+    {%- if page.layout == "post" -%}
+      {%- assign title = page.title -%}
+    {%- else -%}
+      {%- capture title -%}{%- translate page.title -%}{%- endcapture -%}
+    {%- endif -%}
+    <title>{{ title }} - {{ site.title }}</title>
+  {%- else -%}
+    <title>{{ site.title }}</title>
+  {%- endif -%}
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>

@@ -1,0 +1,25 @@
+{%- if include.right -%}
+  {%- assign order_var2 = " order-lg-2" -%}
+  {%- assign order_var1 = " order-lg-1" -%}
+{%- else -%}
+  {%- assign order_var2 = "" -%}
+  {%- assign order_var1 = "" -%}
+{%- endif -%}
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="{{ "col-lg-6" | append: order_var2 }}">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{{ include.image }}" alt="">
+        </div>
+      </div>
+      <div class="{{ "col-lg-6" | append: order_var1 }}">
+        <div class="p-5">
+          <h2 class="display-4">{{ include.headline }}</h2>
+          <p>{{ include.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

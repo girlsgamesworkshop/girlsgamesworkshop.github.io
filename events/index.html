@@ -1,0 +1,49 @@
+---
+layout: page
+title: menu.title_events
+description: menu.desc_events
+---
+
+{%- if site.paginate -%}
+  {%- assign posts = paginator.posts -%}
+{%- else -%}
+  {%- assign posts = site.posts -%}
+{%- endif -%}
+
+{%- capture date_format -%}{%- translate global.date_format -%}{%- endcapture -%}
+
+<!-- posts -->
+{%- if posts.size > 0 -%}
+  {%- for post in posts -%}
+    <div class="post-preview">
+      <a href="{{ post.url | relative_url }}">
+        <h2 class="post-title">{{ post.title | escape }}</h2>
+        {%- if post.subtitle -%}
+          <h3 class="post-subtitle">{{ post.subtitle | escape }}</h3>
+        {%- endif -%}
+      </a>
+      <p class="post-meta">
+        {%- if post.author -%}
+          {%- translate post.from -%}&nbsp{{ post.author | join: ", " }}&nbsp{%- translate post.at -%}&nbsp
+        {%- endif -%}
+        {{ post.date | date: date_format }}
+      </p>
+      {%- if post.modified_date -%}
+        <p class="font-weight-light font-italic">{%- translate post.updated -%}: {{ post.modified_date | date: date_format }}</p>
+      {%- endif -%}
+      <hr>
+    </div>
+  {%- endfor -%}
+
+  {%- if site.paginate -%}
+    <div class="clearfix">
+      {%- if paginator.previous_page -%}
+        <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | relative_url }}">&larr;&nbsp {%- translate post.newer -%}</a>
+      {%- endif -%}
+      {%- if paginator.next_page -%}
+        <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | relative_url }}">{%- translate post.older -%} &nbsp&rarr;</a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+{%- endif -%}

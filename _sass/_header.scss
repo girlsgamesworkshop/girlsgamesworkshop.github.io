@@ -1,0 +1,59 @@
+header.banner {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(18rem + 72px);
+  padding-bottom: 18rem;
+  margin-top: 3rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: contain;
+}
+
+header.subpage {
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  .subpage-heading {
+    font-size: 4rem;
+    color: $tertiary;
+  }
+  .subpage-subheading {
+    font-size: 2rem;
+  }
+}
+
+header.post {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+  
+  .post-no-bg {
+    margin-top: 8rem;
+  }
+
+  .post-bg {
+    margin-top: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 1px #000000;
+  }
+
+  .post-heading {
+    font-size: 4rem;
+  }
+
+  .post-subheading {
+    font-style: oblique;
+    margin: 10px 0 30px;
+  }
+
+  .post-meta-bg {
+    font-weight:400;
+  }
+}
