@@ -13,6 +13,7 @@ Telefon:
 E-Mail: {{ site.email }}
 
 **Registereintrag:**   
+Eintrag im Vereinsregister.  
 Registergericht: Amtsgericht Charlottenburg, Berlin  
 Registernummer: VR 37850 B  
 
