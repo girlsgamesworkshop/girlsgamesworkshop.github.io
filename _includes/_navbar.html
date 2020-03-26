@@ -15,7 +15,8 @@
     <a class="navbar-brand" href="{{ link }}">{{ lang }}</a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        {%- for item in site.menu -%}
+        {%- assign sorted_menu = site.menu | sort: 'order' -%}
+        {%- for item in sorted_menu -%}
           <li class="nav-item">
             {%- if site.lang == "de" -%}
               {%- assign item_url = item.url | prepend: "/de" -%}
