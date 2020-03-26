@@ -12,9 +12,11 @@ post:
   older: "Ältere Posts"
   newer: "Neuere Posts"
 menu:
-  title_about: "About"
-  desc_about: "Was wir tun"
+  title_workshop: "Workshop"
+  desc_workshop: "Was wir tun"
   title_contact: "Kontakt"
   desc_contact: "Mit uns in Kontakt treten"
   title_events: "Events"
   desc_events: "Aktuelles"
+  title_about: "Impressum"
+  desc_about: "Impressum"
