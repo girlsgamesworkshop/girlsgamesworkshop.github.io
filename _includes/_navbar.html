@@ -1,28 +1,25 @@
+{%- assign default_lang = '/' | append: site.default_lang -%}
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
   <div class="container">
-    {%- if site.lang == "de" -%} {%- assign home = "/de/" -%} {%- else  -%} {%- assign home = "/" -%} {%- endif -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    {%- assign home = site.baseurl_root | append: '/' | append: site.lang | remove: site.default_lang -%}
     <a class="navbar-brand" href="{{ home }}">Home</a>
-    {%- if site.lang == "en" -%}
-      {%- capture lang -%}{%- translate langs.de -%}{%- endcapture -%}
-      {%- capture link -%}{{ site.baseurl_root }}/de{{ page.url}}{%- endcapture -%}
-    {%- else -%}
-      {%- capture lang -%}{%- translate langs.en -%}{%- endcapture -%}
-      {%- capture link -%}{{ site.baseurl_root }}{{ page.url}}{%- endcapture -%}
-    {%- endif -%}
-    <a class="navbar-brand" href="{{ link }}">{{ lang }}</a>
+
+    {%- for lang in site.languages -%}
+      {%- unless site.lang == lang -%}
+        {%- assign link = site.baseurl_root | append: '/' | append: lang | remove: default_lang | append: page.url -%}
+        <a class="navbar-brand" href="{{ link }}">{%- translate langs.{{ lang }} -%}</a>
+      {%- endunless -%}
+    {%- endfor -%}
+
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         {%- assign sorted_menu = site.menu | sort: 'order' -%}
         {%- for item in sorted_menu -%}
           <li class="nav-item">
-            {%- if site.lang == "de" -%}
-              {%- assign item_url = item.url | prepend: "/de" -%}
-            {%- else -%}
-              {%- assign item_url = item.url -%}
-            {%- endif -%}
+            {%- assign item_url = site.baseurl_root | append: '/' | append: site.lang | remove: default_lang | append: item.url -%}
             <a class="nav-link" href="{{ item_url }}">{%- translate item.title -%}</a>
           </li>
         {%- endfor -%}
