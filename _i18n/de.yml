@@ -18,5 +18,6 @@ menu:
   desc_contact: "Mit uns in Kontakt treten"
   title_events: "Events"
   desc_events: "Aktuelles"
-  title_about: "Impressum"
-  desc_about: "Impressum"
+about:
+  title: "Impressum"
+  desc: "Impressum"
