@@ -27,6 +27,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README
+  - CNAME
 
 paginate: 5
 paginate_path: "/events/page:num/"
