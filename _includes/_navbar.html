@@ -10,6 +10,9 @@
       {%- unless site.lang == lang -%}
         {%- assign default_lang = '/' | append: site.default_lang -%}
         {%- assign link = site.baseurl_root | append: '/' | append: lang | remove: default_lang | append: page.url -%}
+        {%- if page.namespace -%}
+          {%- capture link -%}{%- tl {{ page.namespace }} {{ lang }} -%}{%- endcapture -%}
+        {%- endif -%}
         <a class="navbar-brand" href="{{ link }}">{%- translate langs.{{ lang }} -%}</a>
       {%- endunless -%}
     {%- endfor -%}
