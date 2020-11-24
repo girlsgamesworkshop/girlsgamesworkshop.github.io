@@ -7,6 +7,7 @@
 
 **Contact Information:**  
 Phone: {{ site.phone }}
+<br>
 E-Mail: {{ site.email }}
 
 **Register entry:**  
