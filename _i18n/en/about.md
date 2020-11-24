@@ -1,30 +1,24 @@
 ## Information in accordance with § 5 TMG
 
-**Girls' Games Workshop e.V.**  
-Mareschstraße 4  
-12055 Berlin
+{{ site.address | newline_to_br }}
 
 **Represented by:**  
-Linda Stein  
-Glenna Lee Buford
+{{ site.executives | newline_to_br }}
 
 **Contact Information:**  
-Phone:  
+Phone: {{ site.phone }}
 E-Mail: {{ site.email }}
 
 **Register entry:**  
 Entry in: Vereinsregister  
 Register Court: Amtsgericht Charlottenburg, Berlin  
-Register Number: VR 37850 B
+Register Number: {{ site.register_nr }}
 
 **Economy ID:**  
-27/666/59313  
+{{ site.economy_id }} 
 
 **Responsible for content according to § 55 (2) RStV:**  
-Linda Stein  
-Mareschstraße 4  
-12055 Berlin  
-<br>
+{{ site.content | newline_to_br }}
 
 ## Disclaimer:
 
