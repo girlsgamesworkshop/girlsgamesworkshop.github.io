@@ -1,19 +1,19 @@
 {%- assign title_a = "Our Organisation" -%}
 {%- capture text_a -%}
 Girls' Games Workshop was founded in Germany in 2015, and is a non profit organization run by volunteers.
-<br>Since beginning of 2020 we are an offical<br> "eingetragener Verein" (e.V).
+<br>Since the end of 2019 we are an offical<br> "eingetragener Verein" (e.V).
 {%- endcapture -%}
 
 
 {%- assign title_b = "Our Workshops" -%}
 {%- capture text_b -%}
-We currently run one-day workshops aimed to teach young girls about game design and game programming through a series of short lectures and lots of hands on learning.<br>Our workshops aim for a ratio of 3:1 of teacher's assistants to girls attending to ensure the attendees get the most out of it.
+We currently run one-day workshops to teach girls about game design and programming. We provide a mix of presentations and coding tasks to cover the basics before we let the girls start working on their very own first game.<br> One Tutor takes care of three participants to ensure all their questions are covered and they get the support they need.
 {%- endcapture -%}
 
 
 {%- assign title_c = "The Team" -%}
 {%- capture text_c -%}
-This workshop is led by volunteers who work in the gaming industry throughout Germany. It targets girls between the ages 12 -15.
+This workshop is led by volunteers working in the IT industry throughout Germany. We want to inspire girls to become interested in game development.
 {%- endcapture -%}
 
 

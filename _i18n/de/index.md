@@ -7,7 +7,7 @@ Der Girls' Games Workshop wurde 2015 in Deutschand gegründet und ist eine gemei
 
 {%- assign title_b = "Unsere Workshops" -%}
 {%- capture text_b -%}
-Wir veranstalten eintägige Workshops für Mädchen, denen wir die Grundlagen des Game Designs sowie der Programmierung beibringen. Der Fokus dieser Workshops liegt vor allem auf praktischen Übungen in denen die Mädchen auch ein eigenes Spiel entwickeln.
+Wir veranstalten eintägige Workshops für Mädchen, denen wir die Grundlagen des Game Designs sowie der Programmierung beibringen. Die Theorie kann direkt in praktischen Übungen ausprobiert werden, bevor es dann an die Entwicklung des ersten eigenen Spiels geht.
 <br>Wir versuchen pro drei Teilnehmerinnen jeweils eine Tutorin oder einen Tutor an Bord zu haben, sodass wir die Mädchen bestmöglich bei der Umsetzung ihrer Projekte unterstützen können.
 {%- endcapture -%}
 
