@@ -1,20 +1,20 @@
 {%- assign title_a = "Der Verein" -%}
 {%- capture text_a -%}
 Der Girls' Games Workshop wurde 2015 in Deutschand gegründet und ist eine gemeinnützige Organisation.
-<br>Seit anfang 2020 sind wir ein eingetragener Verein.
+<br>Seit Ende 2019 sind wir ein eingetragener Verein.
 {%- endcapture -%}
 
 
 {%- assign title_b = "Unsere Workshops" -%}
 {%- capture text_b -%}
-Wir veranstalten 1-Tages-Workshops für junge Mädchen, denen wir die Grundlagen des Game Design sowie der Programmierung beibringen. Der Fokus dieser Workshops liegt vor allem auf praktischen Übungen in denen die Mädchen ihr auch ein eigenes Spiel entwickeln.
-<br>In der Regel streben wir ein Verhältnis von einem Lehrer auf drei Schülerinnen an um sicherzustellen, dass wir die bestmögliche Betreuung anbieten können und die Mädchen möglichst viel lernen.
+Wir veranstalten eintägige Workshops für Mädchen, denen wir die Grundlagen des Game Designs sowie der Programmierung beibringen. Der Fokus dieser Workshops liegt vor allem auf praktischen Übungen in denen die Mädchen auch ein eigenes Spiel entwickeln.
+<br>Wir versuchen pro drei Teilnehmerinnen jeweils eine Tutorin oder einen Tutor an Bord zu haben, sodass wir die Mädchen bestmöglich bei der Umsetzung ihrer Projekte unterstützen können.
 {%- endcapture -%}
 
 
 {%- assign title_c = "Das Team" -%}
 {%- capture text_c -%}
-Geleitet wird der Workshop von ehrenamtlichen Helfern, die alle in unterschiedlichen deutschen Spielefirmen arbeiten und richtet sich an Mädchen im Alter von 12 - 15 Jahren.
+Geleitet wird der Workshop von ehrenamtlichen Helferinnen und Helfern, die in unterschiedlichen deutschen IT-Firmen arbeiten und ihre Begeisterung für die Spieleentwicklung weitergeben möchten.
 {%- endcapture -%}
 
 
