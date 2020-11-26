@@ -21,3 +21,6 @@ menu:
 about:
   title: "About"
   desc: "Legal Disclosure"
+privacy:
+  title: "Privacy Policy"
+  desc: "Privacy Policy"

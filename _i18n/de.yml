@@ -21,3 +21,6 @@ menu:
 about:
   title: "Impressum"
   desc: "Impressum"
+privacy:
+  title: "Datenschutz"
+  desc: "Datenschutz"

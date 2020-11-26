@@ -1,6 +1,11 @@
 ---
 layout: page
-title: "Datenschutz"
+title: privacy.title
+description: privacy.desc
+
+namespace: privacy
+permalink: /privacy/
+permalink_de: /datenschutz/
 ---
 
 # Datenschutzrichtlinie
