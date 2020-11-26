@@ -7,7 +7,6 @@ author:
 categories: [workshop, annoncement, ankündigung]
 tags: [corona, remote, workshop]
 image: "/assets/img/winter.jpg"
-modified_date: 2020-11-26
 ---
 
 In diesem Jahr läuft wohl vieler Orts alles etwas anders als geplant - auch bei uns. Seit unser Gründung und unserem ersten Workshop im November 2016 haben wir jedes Jahr zwei Workshops veranstaltet. Es gab eine Frühlingsausgabe zum Girls'Day bei Wooga und eine Herbstausgabe.
