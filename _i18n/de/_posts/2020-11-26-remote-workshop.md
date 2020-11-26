@@ -4,7 +4,7 @@ title: "Remote Workshop"
 subtitle: "im Dezember"
 author:
   - Linda Stein
-categories: [workshop, annoncement, ankündigung]
+categories: [events]
 tags: [corona, remote, workshop]
 image: "/assets/img/winter.jpg"
 ---
