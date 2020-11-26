@@ -1,4 +1,4 @@
-title: Girls Games Workshop e.V.
+title: Girls' Games Workshop e.V.
 email: mail [at] girlsgamesworkshop [dot] org
 phone: 030 831 904 89
 address: |-
@@ -25,7 +25,7 @@ description: >-
 
 baseurl: "" # needs to be defined to translate permalinks
 url: "https://girlsgamesworkshop.org" # the base hostname & protocol for your site, e.g. http://example.com
-author: Girls Games Workshop e.V.
+author: Girls' Games Workshop e.V.
 
 languages: ["en", "de"]
 exclude_from_localizations: ["assets", "vendor"]
