@@ -1,6 +1,6 @@
 {%- assign title_a = "Der Verein" -%}
 {%- capture text_a -%}
-Der Girls' Games Workshop wurde 2015 in Deutschand gegründet und ist eine gemeinnützige Organisation.
+Der Girls' Games Workshop wurde 2016 in Deutschand gegründet und ist eine gemeinnützige Organisation.
 <br>Seit Ende 2019 sind wir ein eingetragener Verein.
 {%- endcapture -%}
 

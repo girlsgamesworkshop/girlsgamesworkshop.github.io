@@ -1,6 +1,6 @@
 {%- assign title_a = "Our Organisation" -%}
 {%- capture text_a -%}
-Girls' Games Workshop was founded in Germany in 2015, and is a non profit organization run by volunteers.
+Girls' Games Workshop was founded in Germany in 2016, and is a non profit organization run by volunteers.
 <br>Since the end of 2019 we are an offical<br> "eingetragener Verein" (e.V).
 {%- endcapture -%}
 
