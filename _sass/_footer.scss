@@ -1,0 +1,32 @@
+footer.footer {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  text-align: center !important;
+  color: #fff !important;
+  background-color: #000 !important;
+
+  .links {
+    a, p {
+      margin: 0 !important;
+      font-size: 80%;
+      font-weight: 400;
+    }
+  
+    ul {
+      padding-left: 0px;
+    }
+  
+    li {
+      display: inline-block;
+    }
+  }
+
+  .sponsors {
+    margin-top: 3rem;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
